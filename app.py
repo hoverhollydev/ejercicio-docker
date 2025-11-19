@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Script simple que imprime Hola ECUADOR en la consola.
+Script simple que imprime Hola Mundo de Contenedores en la consola.
 """
  
 if __name__ == "__main__":
-    print("Hola ECUADOR, como estas")
+    print("Hola Mundo de Contenedores")
