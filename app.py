@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 """
-Script simple que imprime Hola Mundo de Contenedores en la consola.
+API simple que responde Hola Mundo en el puerto 3000.
 """
- 
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/', methods=['GET'])
+def hello():
+    return "Hola Mundo de Contenedores", 200
+
 if __name__ == "__main__":
-    print("Hola Mundo de Contenedores")
+    app.run(host='0.0.0.0', port=3000, debug=False)
